@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Header title="Task Traker"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+  },
+  data(){
+    return{
+      tasks : [ ]
+    }
   }
 }
 </script>
@@ -21,6 +27,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px;
+}
+.container{
+  width: 70%;
+  margin: 60px;
+  padding: 30px;
+  border: 1px solid grey;
 }
 </style>
