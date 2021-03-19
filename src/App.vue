@@ -33,6 +33,6 @@ export default {
   width: 70%;
   margin: 60px;
   padding: 30px;
-  border: 2px solid grey;
+  border: 1px solid grey;
 }
 </style>
